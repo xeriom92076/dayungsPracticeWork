@@ -1,0 +1,24 @@
+footer {
+  padding: 50px 15px;
+  background-color: #f9f9f9;
+}
+
+footer .iconLink {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .iconLink a {
+  padding: 0 10px;
+}
+
+footer .iconLink a img {
+  width: 50px;
+  height: 50px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}
+/*# sourceMappingURL=footer.css.map */

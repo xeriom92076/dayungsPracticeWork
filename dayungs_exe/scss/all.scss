@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif, 微軟正黑體;
+  letter-spacing: 5px;
+}
+h2 {
+  color: #4a4943;
+  margin: 0;
+}
+h3 {
+  color: #ab922e;
+}
+p {
+  color: #504e47;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  overflow: hidden;
+}
+@import "nav";
+/*bannerArea 封面"*/
+@import "bannerArea";
+/*curveArea 曲線圖片"*/
+.curveArea {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+/*mainArea 主內容背景底圖"*/
+.mainArea {
+  background-image: url("../images/main/main_bg.jpg");
+  background-position: top;
+  background-size: cover;
+}
+/*mainArea > aboutArea 主內容>關於區*/
+@import "aboutArea";
+/*mainArea > menuArea 主內容>菜單區*/
+@import "menuArea";
+/*mainArea > newsArea 主內容>新消息區*/
+@import "newsArea";
+/*mainArea > newsArea 主內容>新消息區*/
+.waterArea {
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+/*mapArea 門市地址區*/
+@import "mapArea";
+/*footer 頁底資訊區*/
+@import "footer";

@@ -1,0 +1,133 @@
+.aboutArea {
+  position: relative;
+  .aboutText {
+    max-width: 600px;
+    box-sizing: border-box;
+    z-index: 5;
+    position: relative;
+    margin: 0 auto;
+    padding: 70px;
+    h2 {
+      font-size: 36px;
+    }
+    h3 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 36px;
+      text-align: justify;
+      font-weight: 700;
+    }
+  }
+  .leaf_about1 {
+    position: absolute;
+    top: -120px;
+    left: -500px;
+    transition: 1s;
+  }
+  .leaf_about2 {
+    position: absolute;
+    top: 200px;
+    right: -500px;
+    transition: 1s;
+  }
+  .leaf_show1 {
+    left: -50px;
+    transition: 2s;
+  }
+  .leaf_show2 {
+    right: -50px;
+    transition: 2s;
+  }
+
+  .ice_about {
+    position: absolute;
+    top: 200px;
+    right: 220px;
+    animation: drif 3s infinite alternate;
+  }
+  @keyframes drif {
+    0% {
+      top: 130px;
+    }
+    100% {
+      top: 200px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .leaf_show1 {
+      left: -150px;
+    }
+    .ice_about {
+      top: 100px;
+      right: 120px;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .leaf_show1 {
+      left: -250px;
+    }
+    .leaf_show2 {
+      right: -150px;
+    }
+    .ice_about {
+      right: 60px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .leaf_show1 {
+      left: -320px;
+    }
+    .leaf_show2 {
+      right: -250px;
+    }
+    .ice_about {
+      right: -10px;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .leaf_show1 {
+      left: -400px;
+    }
+    .leaf_about2 {
+      top: 150px;
+    }
+    .leaf_show2 {
+      right: -470px;
+    }
+    .ice_about {
+      right: -80px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .aboutText {
+      padding: 50px 30px;
+    }
+    .leaf_about1 {
+      top: -180px;
+      img {
+        width: 200px;
+      }
+    }
+    .leaf_show1 {
+      left: -120px;
+    }
+    .leaf_about2 {
+      top: 360px;
+      img {
+        width: 200px;
+      }
+    }
+    .leaf_show2 {
+      right: -50px;
+    }
+    .ice_about {
+      right: -40px;
+      img {
+        width: 100px;
+      }
+    }
+  }
+}

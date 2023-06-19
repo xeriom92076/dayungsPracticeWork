@@ -1,0 +1,197 @@
+.menuArea {
+  position: relative;
+  .menuText {
+    max-width: 900px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 100px 15px 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    h2 {
+      font-size: 36px;
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 22px;
+      margin-bottom: 30px;
+      padding-left: 10px;
+    }
+    .menuFlexWrap {
+      display: flex;
+      flex-wrap: wrap;
+      .menuFlexBox {
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        padding: 10px;
+        .menuCard {
+          display: block;
+          background-color: #fff;
+          border-radius: 20px;
+          height: 350px;
+          position: relative;
+          box-shadow: 0px 1px 1px 0px #00000030;
+          &:hover {
+            img {
+              transform: translate(-50%, -45%);
+              transition: 0.5s;
+            }
+          }
+          p {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #313131;
+          }
+          img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -35%);
+            transition: 0.5s;
+          }
+        }
+        .cardYellow {
+          background: linear-gradient(
+            0deg,
+            rgba(249, 126, 0, 1) 0%,
+            rgba(254, 199, 46, 1) 100%
+          );
+          p {
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .menuMore {
+      border-radius: 20px;
+      background-color: #3eac53;
+      height: 130px;
+      position: relative;
+      margin: 20px 10px;
+      display: block;
+      &:hover {
+        background-color: #297437;
+        transition: 0.5s;
+      }
+      img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 35px;
+        width: 60%;
+      }
+      p {
+        display: block;
+        width: 200px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        span {
+          letter-spacing: 0px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .menuText {
+      .menuFlexWrap {
+        .menuFlexBox {
+          .menuCard {
+            height: 290px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 805px) {
+    .menuText {
+      .menuFlexWrap {
+        .menuFlexBox {
+          width: calc(100% / 2);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .menuText {
+      .menuFlexWrap {
+        .menuFlexBox {
+          width: 100%;
+          .menuCard {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .menuText {
+      .menuMore {
+        height: 150px;
+        img {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        p {
+          width: 100%;
+          top: 27%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .menuText {
+      .menuMore {
+        height: 110px;
+        p {
+          top: 35%;
+        }
+      }
+    }
+  }
+  .ice_menu1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+  .ice_menu2 {
+    position: absolute;
+    top: 550px;
+    left: -70px;
+  }
+  @media screen and (max-width: 1000px) {
+    .ice_menu1 {
+      top: 10px;
+      left: -20px;
+    }
+    .ice_menu2 {
+      top: 550px;
+      left: -70px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .ice_menu1 {
+      img {
+        width: 70px;
+      }
+    }
+    .ice_menu2 {
+      left: -170px;
+    }
+  }
+}

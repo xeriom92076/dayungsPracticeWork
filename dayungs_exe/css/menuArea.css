@@ -1,0 +1,209 @@
+.menuArea {
+  position: relative;
+}
+
+.menuArea .menuText {
+  max-width: 900px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 100px 15px 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+}
+
+.menuArea .menuText h2 {
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+.menuArea .menuText h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.menuArea .menuText .menuFlexWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox {
+  width: calc(100% / 3);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard {
+  display: block;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 350px;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 1px 0px #00000030;
+          box-shadow: 0px 1px 1px 0px #00000030;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard:hover img {
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard p {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #313131;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .cardYellow {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f97e00), to(#fec72e));
+  background: linear-gradient(0deg, #f97e00 0%, #fec72e 100%);
+}
+
+.menuArea .menuText .menuFlexWrap .menuFlexBox .cardYellow p {
+  color: #fff;
+}
+
+.menuArea .menuText .menuMore {
+  border-radius: 20px;
+  background-color: #3eac53;
+  height: 130px;
+  position: relative;
+  margin: 20px 10px;
+  display: block;
+}
+
+.menuArea .menuText .menuMore:hover {
+  background-color: #297437;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menuArea .menuText .menuMore img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  width: 60%;
+}
+
+.menuArea .menuText .menuMore p {
+  display: block;
+  width: 200px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.menuArea .menuText .menuMore p span {
+  letter-spacing: 0px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .menuArea .menuText .menuFlexWrap .menuFlexBox {
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menuArea .menuText .menuFlexWrap .menuFlexBox {
+    width: 100%;
+  }
+  .menuArea .menuText .menuFlexWrap .menuFlexBox .menuCard {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menuArea .menuText .menuMore {
+    height: 150px;
+  }
+  .menuArea .menuText .menuMore img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .menuArea .menuText .menuMore p {
+    width: 100%;
+    top: 27%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menuArea .menuText .menuMore {
+    height: 110px;
+  }
+  .menuArea .menuText .menuMore p {
+    top: 35%;
+  }
+}
+
+.menuArea .ice_menu1 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.menuArea .ice_menu2 {
+  position: absolute;
+  top: 550px;
+  left: -70px;
+}
+
+@media screen and (max-width: 1000px) {
+  .menuArea .ice_menu1 {
+    top: 10px;
+    left: -20px;
+  }
+  .menuArea .ice_menu2 {
+    top: 550px;
+    left: -70px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .menuArea .ice_menu1 img {
+    width: 70px;
+  }
+  .menuArea .ice_menu2 {
+    left: -170px;
+  }
+}
+/*# sourceMappingURL=menuArea.css.map */

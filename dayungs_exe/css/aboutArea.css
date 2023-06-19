@@ -1,0 +1,163 @@
+.aboutArea {
+  position: relative;
+}
+
+.aboutArea .aboutText {
+  max-width: 600px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 5;
+  position: relative;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+.aboutArea .aboutText h2 {
+  font-size: 36px;
+}
+
+.aboutArea .aboutText h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.aboutArea .aboutText p {
+  font-size: 18px;
+  line-height: 36px;
+  text-align: justify;
+  font-weight: 700;
+}
+
+.aboutArea .leaf_about1 {
+  position: absolute;
+  top: -120px;
+  left: -500px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutArea .leaf_about2 {
+  position: absolute;
+  top: 200px;
+  right: -500px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aboutArea .leaf_show1 {
+  left: -50px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.aboutArea .leaf_show2 {
+  right: -50px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.aboutArea .ice_about {
+  position: absolute;
+  top: 200px;
+  right: 220px;
+  -webkit-animation: drif 3s infinite alternate;
+          animation: drif 3s infinite alternate;
+}
+
+@-webkit-keyframes drif {
+  0% {
+    top: 130px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+@keyframes drif {
+  0% {
+    top: 130px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutArea .leaf_show1 {
+    left: -150px;
+  }
+  .aboutArea .ice_about {
+    top: 100px;
+    right: 120px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .aboutArea .leaf_show1 {
+    left: -250px;
+  }
+  .aboutArea .leaf_show2 {
+    right: -150px;
+  }
+  .aboutArea .ice_about {
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutArea .leaf_show1 {
+    left: -320px;
+  }
+  .aboutArea .leaf_show2 {
+    right: -250px;
+  }
+  .aboutArea .ice_about {
+    right: -10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aboutArea .leaf_show1 {
+    left: -400px;
+  }
+  .aboutArea .leaf_about2 {
+    top: 150px;
+  }
+  .aboutArea .leaf_show2 {
+    right: -470px;
+  }
+  .aboutArea .ice_about {
+    right: -80px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .aboutArea .aboutText {
+    padding: 50px 30px;
+  }
+  .aboutArea .leaf_about1 {
+    top: -180px;
+  }
+  .aboutArea .leaf_about1 img {
+    width: 200px;
+  }
+  .aboutArea .leaf_show1 {
+    left: -120px;
+  }
+  .aboutArea .leaf_about2 {
+    top: 360px;
+  }
+  .aboutArea .leaf_about2 img {
+    width: 200px;
+  }
+  .aboutArea .leaf_show2 {
+    right: -50px;
+  }
+  .aboutArea .ice_about {
+    right: -40px;
+  }
+  .aboutArea .ice_about img {
+    width: 100px;
+  }
+}
+/*# sourceMappingURL=aboutArea.css.map */
